@@ -1,0 +1,63 @@
+@mixin flexbox($h) {
+  display: flex;
+  align-items: center;
+  min-width: 100%;
+  min-height: $h;
+}
+
+body {
+  overflow: hidden;
+  background-color: #0077DD;
+  color: #fff;
+  header {
+    @include flexbox(15vh);
+    h1 {
+      margin: auto;
+      font-size: 32px;
+      a {
+        color: #fff;
+        font-family: 'Poiret One', Arial, sans;
+        font-weight: bold;
+      }
+      a:hover {
+        color: #000;
+        text-decoration: none;
+      }
+    }
+  }
+  main {
+    section {
+      @include flexbox(70vh);
+      border: 1px solid black;
+      background-color: #fff;
+      div {
+        textarea {
+          height: 60vh !important;
+        }
+        div {
+          height: 60vh !important;
+          overflow: auto;
+          background-color: #f7f7f7 !important;
+        }
+      }
+    }
+  }
+  footer {
+    section {
+      @include flexbox(10vh);
+      div {
+        p {
+          font-size: 14px;
+          margin: 0;
+          a {
+            color: #FF5500;
+            font-weight: bold;
+          }
+          a:hover {
+            color: #FFCC55;
+          }
+        }
+      }
+    }
+  }
+}

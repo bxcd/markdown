@@ -1,0 +1,57 @@
+body {
+  overflow: hidden;
+  background-color: #0077DD;
+  color: #fff;
+}
+body header {
+  display: flex;
+  align-items: center;
+  min-width: 100%;
+  min-height: 15vh;
+}
+body header h1 {
+  margin: auto;
+  font-size: 32px;
+}
+body header h1 a {
+  color: #fff;
+  font-family: 'Poiret One', Arial, sans;
+  font-weight: bold;
+}
+body header h1 a:hover {
+  color: #000;
+  text-decoration: none;
+}
+body main section {
+  display: flex;
+  align-items: center;
+  min-width: 100%;
+  min-height: 70vh;
+  border: 1px solid black;
+  background-color: #fff;
+}
+body main section div textarea {
+  height: 60vh !important;
+}
+body main section div div {
+  height: 60vh !important;
+  overflow: auto;
+  background-color: #f7f7f7 !important;
+}
+body footer section {
+  display: flex;
+  align-items: center;
+  min-width: 100%;
+  min-height: 10vh;
+}
+body footer section div p {
+  font-size: 14px;
+  margin: 0;
+}
+body footer section div p a {
+  color: #FF5500;
+  font-weight: bold;
+}
+body footer section div p a:hover {
+  color: #FFCC55;
+}
