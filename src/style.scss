@@ -7,7 +7,7 @@
 
 body {
   overflow: hidden;
-  background-color: #0077DD;
+  background-color: #0080EE;
   color: #fff;
   header {
     @include flexbox(15vh);
@@ -30,11 +30,11 @@ body {
       @include flexbox(70vh);
       border: 1px solid black;
       background-color: #fff;
-      div {
-        textarea {
+      .column {
+        #editor {
           height: 60vh !important;
         }
-        div {
+        #preview {
           height: 60vh !important;
           overflow: auto;
           background-color: #f7f7f7 !important;
@@ -45,9 +45,9 @@ body {
   footer {
     section {
       @include flexbox(10vh);
-      div {
+      .column {
         p {
-          font-size: 14px;
+          font-size: calc(8px + 1vmin);
           margin: 0;
           a {
             color: #FF5500;
@@ -61,3 +61,25 @@ body {
     }
   }
 }
+@media only screen and (max-width: 767px) {
+  body {
+    main {
+      section {
+        @include flexbox(40vh);
+        border: 1px solid black;
+        background-color: #f4f4f4;
+        .column {
+          #editor {
+            height: 37vh !important;
+          }
+          #preview {
+            height: 37vh !important;
+            overflow: auto;
+            background-color: #f7f7f7 !important;
+          }
+        }
+      }
+    }
+  }
+}
+  
